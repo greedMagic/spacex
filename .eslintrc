@@ -1,0 +1,25 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "env": {
+		"es6": true,
+		"browser": false,
+    "node": true
+  },
+  "extends": "htmlacademy/es6",
+  "rules": {
+    "strict": "off",
+		"no-undef": "off",
+		"no-unused-vars": "off",
+		"no-console": "off",
+		"no-invalid-this": "off",
+		"curly": "off",
+		"no-unreachable": "off",
+		"eqeqeq": "off",
+		"no-unused-expressions": "off",
+		"no-constant-condition": "off",
+		"no-trailing-spaces": "off"
+  }
+}

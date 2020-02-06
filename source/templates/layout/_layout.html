@@ -1,0 +1,53 @@
+{% import "../parts/_mixins.html" as mixins %}
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8"/>
+    <title>{% if title %}{{ title }}{% else %}Template{% endif %}</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="theme-color" content="#fff"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <!-- {# {% include "../parts/_media-tags.html" %} #} -->
+    <style>
+      @font-face {
+        font-family: "Museo Sans";
+        src: local("MuseoSansCyrl-700"),
+          url("fonts/MuseoSansCyrl-700.woff2") format("woff2"),
+          url("fonts/MuseoSansCyrl-700.woff") format("woff");
+        font-weight: 700;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Museo Sans";
+        src: local("MuseoSansCyrl-300"),
+          url("fonts/MuseoSansCyrl-300.woff2") format("woff2"),
+          url("fonts/MuseoSansCyrl-300.woff") format("woff");
+        font-weight: 300;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Museo Sans";
+        src: local("MuseoSansCyrl-100"),
+          url("fonts/MuseoSansCyrl-100.woff2") format("woff2"),
+          url("fonts/MuseoSansCyrl-100.woff") format("woff");
+        font-weight: 100;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="wrapper">
+      {% block content %}{% endblock %}
+    </div>
+
+		<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
+  </body>
+</html>

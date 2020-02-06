@@ -1,0 +1,55 @@
+.feature__list {
+  @include row;
+}
+
+.feature__list-item {
+  flex-basis: 50%;
+  padding: 5px;
+
+  text-align: center;
+  color: #b1b1b1;
+
+  cursor: pointer;
+}
+
+.feature__list-item:hover {
+  color: #ffffff;
+
+  transition: color 0.2s ease-in-out;
+}
+
+.feature__box {
+  padding: 30px 15px 35px;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+.feature__text {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+.feature__text--top {
+  margin-bottom: 15px;
+}
+
+.feature__text--bottom {
+  margin-top: -5px;
+}
+
+.feature__text--small {
+  display: inline;
+  font-weight: inherit;
+  font-size: 20px;
+}
+
+.feature__count {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1;
+}
+

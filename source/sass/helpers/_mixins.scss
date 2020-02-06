@@ -1,0 +1,19 @@
+@mixin row {
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@mixin container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  // @media (min-width: 768px) and (max-width: 1199.98px) {
+  //   padding-right: 30px;
+  //   padding-left: 30px;
+  // }
+}

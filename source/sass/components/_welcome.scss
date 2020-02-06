@@ -1,0 +1,130 @@
+.welcome {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  min-height: 660px;
+
+  color: #b1b1b1;
+
+  background-color: #08121b;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.welcome__wrapper {
+  position: relative;
+  z-index: 20;
+
+  @include container;
+  @include row;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.welcome__title {
+  margin-top: 65px;
+
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 1.15;
+  text-transform: uppercase;
+
+  background: linear-gradient(90deg, #ffffff 10%, #ffffff 25%, #ff3f04);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.welcome__subtitle {
+  margin-bottom: 85px;
+
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 1.15;
+}
+
+.welcome__title + .welcome__subtitle {
+  margin-top: -5px;
+}
+
+.welcome__more {
+  position: relative;
+
+  display: inline-flex;
+  padding: 10px 24px;
+
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 1;
+  color: #ffffff;
+  text-decoration: none;
+
+  border: 1px solid transparent;
+  border-image: linear-gradient(135deg, transparent,#273e66 35%, #273e66 65%, transparent);
+  border-image-slice: 1;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+
+    display: block;
+    width: 34px;
+    height: 34px;
+
+    background-size: 34px 34px;
+    background-repeat: no-repeat;
+  }
+
+  &::before {
+    left: -16px;
+    bottom: -16px;
+    border-top: none;
+    border-right: none;
+
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAMAAAANmfvwAAAAjVBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8DizOFAAAALnRSTlMAAQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHR4gJikvODxISU1OUlhbXWOBs95cGgAAATVJREFUGBkFwQGu2EQARDG/TUol7n9XBP3ZwQ4ACAYABIAAGAACEABgAAECaAADBAQEDDAQCERgBgyCQAfAZmAIQYVg2AZDBB0ijLENxgt0SB3sYjE0rwDVOeWu3bUYeISO6jzPe04nSAPegDjv8z5n3/eDOzLaEzrqOc+vv37/fk4aaOAJpc7z/vXr99/u0zYD8CKQTq/37Ndm5wN0IKRzStX7lAK8AED6e3/++0mg8QLg3vM95fkqYHgxsd37Pf96tj8/3wbAC2D3+zn+yfZzr28z2BNSHDPb9/Pn57vDBu9iWi77znH33e8OwAusudx7mHvvzB0mQUdyCvPZ7MJEcCKJMeMOI4SKAIw7GCFQAeAaDEEgBbgGBoGAiDFg4AECgAEGBBAAgAECEAAwAAFAAAaA/wF4AKiAmhoI2wAAAABJRU5ErkJggg==");
+  }
+
+  &::after {
+    top: -16px;
+    right: -16px;
+    border-bottom: none;
+    border-left: none;
+
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAMAAAANmfvwAAAAjVBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8DizOFAAAALnRSTlMAAQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHR4gJikvODxISU1OUlhbXWOBs95cGgAAATZJREFUGBkFwcGRHCAQBDA1sH5c/rnaroXpkwIAAVAABIAAAAUIQAAAFBBAAEEBCgIECKEUKAQExAK0CopAIBYA2oISBLIIgNIWJQiyiBCqSgfqEAiJLWgHTYr0AIkkay1hZs2UKBxBlsg6a2eZecNoCg6ArL3P2at998tIo+RAwFrnz0l0L501lcIJRLKt9fl8kvffvCmAA0Cyzw+2v3utSYmyEKDt+/emdtYCwEED1Xf7zU8KABxAad9dVe1MFYXTACZP8sndt1MFxRaIJJFK7/d+72tR2IIIaDtzv/fOe2UKR0OFDu5bvHlDgW6CiKBt581MW1MQAklErGBaZYoKAkkIQSlTqA0BgkDRFsqGABUAU1AEBIiAUlDYQACAAgUBCEAKUCAAAgAoQAAgABSAAAACBQC/U5PBD7sTmOoAAAAASUVORK5CYII=");
+  }
+}
+
+.welcome__intro {
+  position: relative;
+}
+
+.welcome__feature {
+  position: relative;
+  margin-left: auto;
+}
+
+.welcome__planet {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.welcome__guide {
+  position: absolute;
+  left: 41%;
+  bottom: 17%;
+  z-index: 20;
+
+  display: block;
+  width: 410px;
+  height: 60px;
+
+  background-image: url("../img/guide.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 406px 57px;
+}
