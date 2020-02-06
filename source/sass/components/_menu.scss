@@ -2,8 +2,18 @@
   @include row;
 }
 
+.menu__list-item {
+  @media (max-width: 1199.98px) {
+    flex-basis: 100%;
+    max-width: 100%;
+    padding: 15px 25px;
+  }
+}
+
 .menu__list-item + .menu__list-item {
-  margin-left: 42px;
+  @media (min-width: 1199.98px) {
+    margin-left: 42px;
+  }
 }
 
 .menu__link {
@@ -12,10 +22,16 @@
   display: inline-flex;
 
   font-weight: 100;
-  font-size: 16px;
+  font-size: 24px;
   line-height: 1.5;
   text-decoration: none;
-  color: #ffffff;
+  color: $white;
+
+  transition: all 0.2s ease-in-out;
+
+  @media (min-width: 1199.98px) {
+    font-size: 16px;
+  }
 }
 
 .menu__link::before {
@@ -28,7 +44,7 @@
 }
 
 .menu__link:hover {
-  color: #b1b1b1;
+  color: $grey-2;
 }
 
 .menu__link:hover::after {

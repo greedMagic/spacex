@@ -1,7 +1,14 @@
 import $ from 'jquery';
 import "./menu";
+import AOS from 'aos';
 
-$(document).ready(() => {
+document.addEventListener("DOMContentLoaded", () => {
+  AOS.init({
+    disable: `phone`, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+    offset: 350,
+    delay: 250,
+    once: true
+  });
 
   let card = $(`.feature__box`);
 
@@ -29,5 +36,5 @@ $(document).ready(() => {
       'transition': `transition`,
     });
   });
-})(jQuery);
+});
 

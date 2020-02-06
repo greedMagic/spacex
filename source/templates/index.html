@@ -5,6 +5,8 @@ title: Путешествие на красную планету
 
 {% block content %}
 
+<h1 class="visually-hidden">Тестовая верстка</h1>
+
 <header class="header">
   <div class="header__wrapper">
     <a class="header__logo" href="#">
@@ -42,15 +44,15 @@ title: Путешествие на красную планету
 </header>
 
 <div class="welcome" style="background-image: url(img/welcome-overlay.jpg);">
-  <div class="welcome__wrapper">
+  <div class="welcome__wrapper" data-aos="zoom-out" data-aos-duration="700">
     <div class="welcome__intro">
-      <p class="welcome__title">Путешествие</p>
-      <p class="welcome__subtitle">на красную планету</p>
+      <p class="welcome__title" data-aos="fade-down">Путешествие</p>
+      <p class="welcome__subtitle" data-aos="fade-right">на красную планету</p>
       <a class="welcome__more" href="#">Начать путешествие</a>
       <span class="welcome__guide"></span>
     </div>
-    <img class="welcome__planet" src="img/mars.png" alt="">
-    <div class="welcome__feature feature">
+    <img class="welcome__planet" src="img/mars.png" alt="Прекрасная красная планета">
+    <div class="welcome__feature feature" data-aos="fade-left">
       <ul class="feature__list">
         <li class="feature__list-item">
           <div class="feature__box">

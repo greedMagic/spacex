@@ -98,7 +98,7 @@ gulp.task(`fontSync`, () => gulp
 gulp.task(`scripts`, () => gulp
   .src([sourceDir + `js/app.js`])
   .pipe(webpackStream({
-    mode: `development`,
+    mode: `production`,
     output: {
       filename: `app.js`,
     },
