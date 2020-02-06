@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Template</title>
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#fff" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <style>
+    @font-face {
+        font-family: "Museo Sans";
+        src: local("MuseoSansCyrl-700"),
+          url("fonts/MuseoSansCyrl-700.woff2") format("woff2"),
+          url("fonts/MuseoSansCyrl-700.woff") format("woff");
+        font-weight: 700;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Museo Sans";
+        src: local("MuseoSansCyrl-300"),
+          url("fonts/MuseoSansCyrl-300.woff2") format("woff2"),
+          url("fonts/MuseoSansCyrl-300.woff") format("woff");
+        font-weight: 300;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Museo Sans";
+        src: local("MuseoSansCyrl-100"),
+          url("fonts/MuseoSansCyrl-100.woff2") format("woff2"),
+          url("fonts/MuseoSansCyrl-100.woff") format("woff");
+        font-weight: 100;
+        font-style: normal;
+      }
+  </style>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+
+    <h1 class="visually-hidden">Тестовая верстка</h1>
+
+    <header class="header">
+      <div class="header__wrapper">
+        <a class="header__logo" href="#">
+          <img src="img/logo.png" width="274" height="34" alt="Логотип компании SpaceX">
+        </a>
+        <button class="header__menu-button">
+          <span class="header__icon-box">
+        <span class="header__icon"></span>
+          </span>
+          <span class="visually-hidden">Показать/Скрыть меню</span>
+        </button>
+        <nav class="header__menu header__menu--closed menu">
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a class="menu__link" href="#">Главная</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__link" href="#">Технология</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__link" href="#">График полетов</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__link" href="#">Гарантии</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__link" href="#">О компаии</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="welcome" style="background-image: url(img/welcome-overlay.jpg);">
+      <div class="welcome__wrapper" data-aos="zoom-out" data-aos-duration="700">
+        <div class="welcome__intro">
+          <p class="welcome__title" data-aos="fade-down">Путешествие</p>
+          <p class="welcome__subtitle" data-aos="fade-right">на красную планету</p>
+          <a class="welcome__more" href="#">Начать путешествие</a>
+          <span class="welcome__guide"></span>
+        </div>
+        <img class="welcome__planet" src="img/mars.png" alt="Прекрасная красная планета">
+        <div class="welcome__feature feature" data-aos="fade-left">
+          <ul class="feature__list">
+            <li class="feature__list-item">
+              <div class="feature__box">
+                <p class="feature__text feature__text--top">мы</p>
+                <p class="feature__text feature__count">1</p>
+                <p class="feature__text feature__text--bottom">на рынке</p>
+              </div>
+            </li>
+            <li class="feature__list-item">
+              <div class="feature__box">
+                <p class="feature__text feature__text--top">гарантируем</p>
+                <p class="feature__text feature__count">50%</p>
+                <p class="feature__text feature__text--bottom">безопасность</p>
+              </div>
+            </li>
+            <li class="feature__list-item">
+              <div class="feature__box">
+                <p class="feature__text feature__text--top">календарик за</p>
+                <p class="feature__text feature__count">2001<span class="feature__text feature__text--small">г.</span>
+                </p>
+                <p class="feature__text feature__text--bottom">в подарок</p>
+              </div>
+            </li>
+            <li class="feature__list-item">
+              <div class="feature__box">
+                <p class="feature__text feature__text--top">путешествие</p>
+                <p class="feature__text feature__count">597</p>
+                <p class="feature__text feature__text--bottom">дней</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
