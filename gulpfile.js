@@ -115,7 +115,7 @@ gulp.task(`scripts`, () => gulp
       ]
     },
     externals: {
-      jquery: `jQuery`
+      // jquery: `jQuery`
     }
   },
   null,
